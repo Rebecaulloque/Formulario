@@ -14,26 +14,31 @@
     <div class="formulario">
         <form action="">
             <h1>Contacta con nosotros!</h1>
-            <label for="">Nombre:
-                <input type="text" placeholder="Ej: Juan" class="inicioFormulario" required>
+            <label for="" class="labelInicial">Nombre:
+                <br>
+                <input type="text" placeholder="Ej: Juan" class="inputFormulario" required>
             </label>
-            <label for="">Apellido:
-                <input type="text" placeholder="Ej: Gonzalez" class="inicioFormulario" required>
-            </label>
-
-            <label for="">Edad:
-                <input type="number" placeholder="Ej: 25" required>
+            <label for="" class="labelInicial">Apellido:
+                <br>
+                <input type="text" placeholder="Ej: Gonzalez" class="inputFormulario" required>
             </label>
 
-            <label for="">Fecha de Nacimiento:
+            <label for="" class="labelInicial">Edad:
+                <br>
+                <input type="number" id="edad" placeholder="Ej: 25" class="inputFormulario" required>
+            </label>
+
+            <label for=""class="labelInicial">Fecha de Nacimiento:
+                <br>
                 <input type="date"  required>
             </label>
 
-            <label for="">E-mail:
-                <input type="email" placeholder="email@gmail.com" class="inicioFormulario" required>
+            <label for="" class="labelInicial">E-mail:
+                <br>
+                <input type="email" placeholder="email@gmail.com" class="inputFormulario" required>
             </label>
-
-            <label for="">País:
+            <label for="" class="labelInicial">País:
+                <br>
                 <select id="pais" name="pais">
                     <option value="Argentina">Argentina</option>
                     <option value="Bolivia">Bolivia</option>
@@ -48,20 +53,23 @@
                 </select>
             </label>
 
-            <fieldset>
+            <fieldset class="genero" >
                 <legend>Género</legend>
                 <input type="radio" name="genero"> Masculino
                 <input type="radio" name="genero"> Femenino
                 <input type="radio" name="genero"> Otro
             </fieldset>
 
-            <fieldset>
+            <fieldset class="domicilio">
                 <legend>Domicilio</legend>
                 <label for="">Calle:
-                    <input type="text" required>
+                    <br>
+                    <input type="text" class="inputFormulario" required>
                 </label>
+                <br>
                 <label for="">Número:
-                    <input type="number" required>
+                    <br>
+                    <input type="number" class="inputFormulario" required>
                 </label>
             </fieldset>
 
@@ -72,7 +80,7 @@
             <input type="checkbox" id="newsletter"> Deseo suscribirme a Newsletter.
         </label>
 
-            <button type="submit">ENVIAR</button>
+            <button type="submit" class="botonEnviar">ENVIAR</button>
 
         </form>
     </div>
