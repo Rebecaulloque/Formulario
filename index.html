@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Formulario</title>
+</head>
+
+<body>
+
+    <div class="formulario">
+        <form action="">
+            <h1>Contacta con nosotros!</h1>
+            <label for="">Nombre:
+                <input type="text" placeholder="Ej: Juan" class="inicioFormulario" required>
+            </label>
+            <label for="">Apellido:
+                <input type="text" placeholder="Ej: Gonzalez" class="inicioFormulario" required>
+            </label>
+
+            <label for="">Edad:
+                <input type="number" placeholder="Ej: 25" required>
+            </label>
+
+            <label for="">Fecha de Nacimiento:
+                <input type="date"  required>
+            </label>
+
+            <label for="">E-mail:
+                <input type="email" placeholder="email@gmail.com" class="inicioFormulario" required>
+            </label>
+
+            <label for="">País:
+                <select id="pais" name="pais">
+                    <option value="Argentina">Argentina</option>
+                    <option value="Bolivia">Bolivia</option>
+                    <option value="Brasil">Brasil</option>
+                    <option value="Chile">Chile</option>
+                    <option value="Colombia">Colombia</option>
+                    <option value="Ecuador">Ecuador</option>
+                    <option value="Paraguay">Paraguay</option>
+                    <option value="Peru">Perú</option>
+                    <option value="Uruguay">Uruguay</option>
+                    <option value="Venezuela">Venezuela</option>
+                </select>
+            </label>
+
+            <fieldset>
+                <legend>Género</legend>
+                <input type="radio" name="genero"> Masculino
+                <input type="radio" name="genero"> Femenino
+                <input type="radio" name="genero"> Otro
+            </fieldset>
+
+            <fieldset>
+                <legend>Domicilio</legend>
+                <label for="">Calle:
+                    <input type="text" required>
+                </label>
+                <label for="">Número:
+                    <input type="number" required>
+                </label>
+            </fieldset>
+
+            <p>Mensaje/Consulta:</p>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+
+            <label for="">
+            <input type="checkbox" id="newsletter"> Deseo suscribirme a Newsletter.
+        </label>
+
+            <button type="submit">ENVIAR</button>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
